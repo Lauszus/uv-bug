@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "package2",
+]
+
+[tool.uv.sources]
+package2 = { git = "ssh://git@github.com/Lauszus/uv-test.git", subdirectory = "package2", rev = "main" }

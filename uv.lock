@@ -1,0 +1,26 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "package1"
+version = "0.1.0"
+source = { directory = "../.cache/uv/git-v0/checkouts/08056d894a84e676/0ff3eff/package1" }
+
+[[package]]
+name = "package2"
+version = "0.1.0"
+source = { git = "ssh://git@github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main#0ff3eff109f3eaf816164217b6acf6183b6ac4bc" }
+dependencies = [
+    { name = "package1" },
+]
+
+[[package]]
+name = "uv-bug"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "package2" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "package2", git = "ssh://git@github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main" }]
