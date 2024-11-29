@@ -4,7 +4,7 @@ requires-python = ">=3.13"
 [[package]]
 name = "package1"
 version = "0.1.0"
-source = { directory = "../.cache/uv/git-v0/checkouts/64fbda8353baefb8/3627609/package1" }
+source = { git = "https://github.com/Lauszus/uv-test.git?subdirectory=package1&rev=main#36276098fbaacadf88275f492a457c51c9dffe66" }
 
 [[package]]
 name = "package2"
