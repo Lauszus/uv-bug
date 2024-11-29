@@ -4,12 +4,12 @@ requires-python = ">=3.13"
 [[package]]
 name = "package1"
 version = "0.1.0"
-source = { directory = "../.cache/uv/git-v0/checkouts/08056d894a84e676/0ff3eff/package1" }
+source = { directory = "../.cache/uv/git-v0/checkouts/64fbda8353baefb8/3627609/package1" }
 
 [[package]]
 name = "package2"
 version = "0.1.0"
-source = { git = "ssh://git@github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main#0ff3eff109f3eaf816164217b6acf6183b6ac4bc" }
+source = { git = "https://github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main#36276098fbaacadf88275f492a457c51c9dffe66" }
 dependencies = [
     { name = "package1" },
 ]
@@ -23,4 +23,4 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "package2", git = "ssh://git@github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main" }]
+requires-dist = [{ name = "package2", git = "https://github.com/Lauszus/uv-test.git?subdirectory=package2&rev=main" }]
